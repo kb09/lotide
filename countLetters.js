@@ -13,13 +13,19 @@ const assertEqual = function(actual, expected) {
 // countLetters
 
 const countLetters = function(string){
-  const result = [];
+  
+  result = {};
 
   for ( const index of string){
     if (index !== ''){
       if ( result[index]){
-        result = result + 1;
-      } 
+        result += 1;
+      } else {
+        result[index] = 1
+      }
+      
+    }
+  } return result;
 }
  
-console.log(countLetters('Does this include spaces'))
+console.log(countLetters("lighthouse in the house") )
