@@ -20,7 +20,7 @@ const eqArrays = function (arrayOne, arrayTwo) {
       return false;
     }
 
-  } 
+  } return true;
   
 }
 
