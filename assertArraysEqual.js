@@ -1,3 +1,17 @@
+
+// assertEqual
+
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(` ✅✅✅  Assertion Passed: ${actual} ===  ${expected}`);
+
+  } else {
+    console.log(` ❌❌❌  Assertion Failed: ${actual}  !==  ${expected}`);
+  }
+
+};
+
+
 //eqArrays
 
 const eqArrays = function (arrayOne, arrayTwo) {
@@ -13,17 +27,17 @@ const eqArrays = function (arrayOne, arrayTwo) {
   
 }
 
-// assertEqual 
+// assertArraysEqual
 
-const assertEqual = function (firstArray, secondArray) {
-  const result = eqArrays ( firstArray, secondArray) 
-    if ( !true ) {
-      console.log (' false ')
+const assertArraysEqual = function (arrayOne, arrayTwo) {
+    if ( !eqArrays(arrayOne, arrayTwo)) {
+      console.log (' Arrays are not the same ')
     } else {
-      console.log ( ' true ');
+      console.log ( ' Arrays are the same');
     }
+   }
+  assertArraysEqual([1,2,3],[1,2,3])
   
-}
 
-// TEST CODE
-console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true));
+
+  
