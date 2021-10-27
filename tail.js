@@ -1,5 +1,4 @@
 
-
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -11,6 +10,14 @@ const assertEqual = function(actual, expected) {
 
 };
 
+
+const tail = function (arr) {
+  if (arr === [] || arr.length === 1){
+    return undefined;
+  } else {
+    return  arr.slice(1, arr.length)
+  }
+}
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 console.log(assertEqual(words.length, 2));
