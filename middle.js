@@ -48,3 +48,8 @@ const assertArraysEqual = function (arrayOne, arrayTwo) {
       return [];
     }
   }
+  if ( array.length % 2 === 0) {
+    // return double element
+  } else if (array.length % 3 === 0)[
+    // return single element
+  ]
