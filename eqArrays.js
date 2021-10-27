@@ -12,7 +12,11 @@ const assertEqual = function(actual, expected) {
 
 const eqArrays = function (arrayOne, arrayTwo) {
   if ( arrayOne.length === arrayTwo.length){
-    return true;
+    if (arrayOne[0] === arrayTwo [0]) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 
