@@ -13,13 +13,13 @@ const assertEqual = function(actual, expected) {
 // countLetters
 
 const countLetters = function(string){
+  const result = [];
 
-  string.replace(/\s/g,'')
-  // const result = [];
-
-  // for ( const index of string ){
-
-  // }
+  for ( const index of string){
+    if (index !== ''){
+      if ( result[index]){
+        result = result + 1;
+      } 
 }
  
 console.log(countLetters('Does this include spaces'))
