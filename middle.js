@@ -43,13 +43,16 @@ const assertArraysEqual = function (arrayOne, arrayTwo) {
 
   // middle
 
-  const middle = function ( array){
-    if (array[0] || array[1]) {
-      return [];
-    }
+  const middle = function (array){
+   if(array.length <= 2) {
+     return [];
+   } else if ( array.length % 2 === 0){
+    return [array[Math.floor((array.length - 1) / 2)], array[Math.ceil((array.length - 1) / 2)]];
+
+   } else {
+     return [array[array.length - 1] / 2];
+   }
   }
-  if ( array.length % 2 === 0) {
-    // return double element
-  } else if (array.length % 3 === 0)[
-    // return single element
-  ]
+console.log(middle([1])) // => []
+
+console.log(middle([1, 2, 3])) // => [2]
