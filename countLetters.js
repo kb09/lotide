@@ -10,22 +10,22 @@ const assertEqual = function(actual, expected) {
 };
 
 
-// countLetters
+// countindexs
 
-const countLetters = function(string){
-  
-  result = {};
+const countLetters = function (string) {
+  const result = {};
 
-  for ( const index of string){
-    if (index !== ''){
-      if ( result[index]){
-        result += 1;
-      } else {
-        result[index] = 1
-      }
-      
+  for (const index of string) {
+  if (index !== '') { //<-- get rid of speaces in string
+    if (result[index]) {
+      result[index] += 1; 
+    } else {
+      result[index] = 1;
     }
-  } return result;
+  }
 }
+  return result;
+}
+
  
 console.log(countLetters("lighthouse in the house") )
