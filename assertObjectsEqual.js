@@ -1,4 +1,3 @@
-// FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(` ✅✅✅  Assertion Passed: ${actual} ===  ${expected}`);
@@ -57,10 +56,20 @@ const eqObjects = function(object1, object2) {
 
 
 
-  
+
   //asserObjectsEqual 
 
 
 const assertObjectsEqual = function(actual, expected) {
   // Implement me!
+  if (actual === expected) {
+  const inspect = require('util').inspect;
+  if (!eqObjects(actual, expected)) return
+  console.log(` ✅✅✅  Assertion Passed: ${actual} ===  ${expected}`);
+    
+
+  } else {
+    console.log(` ❌❌❌  Assertion Failed: ${actual}  !==  ${expected}`);
+  }
+
 };
