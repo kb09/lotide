@@ -16,7 +16,7 @@ const countLetters = function (string) {
   const result = {};
 
   for (const index of string) {
-  if (index !== '') { //<-- get rid of speaces in string
+  if (index !== " ") { //<-- get rid of speaces in string, changed ' ' to " " to fix result
     if (result[index]) {
       result[index] += 1; 
     } else {
