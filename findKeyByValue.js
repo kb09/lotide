@@ -11,14 +11,20 @@ const assertEqual = function(actual, expected) {
 
 //findKetByValue
 
-const findKetByValue = function (object, value){
-  const arrayForKeys = object.keys(object);
-  for (let i = 0; i < arrayOfKeys.length; i++) {
-
-    if(object[arrayForKeys[i]] === value[i]) {
-      return arrayForKeys;
+const findKeyByValue = function (object, value){
+  const arrayForKeys = Object.keys(object);
+  for (let key of arrayForKeys) {
+    if (object[key] === value) {
+      return key;
     }
-
   }
-
 }
+
+const bestTVShowsByGenre = { 
+  sci_fi: "The Expanse",
+  comedy: "Brooklyn Nine-Nine",
+  drama:  "The Wire"
+};
+
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
