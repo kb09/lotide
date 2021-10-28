@@ -31,9 +31,9 @@ const eqArrays = function (arrayOne, arrayTwo) {
 
 const assertArraysEqual = function (arrayOne, arrayTwo) {
     if ( !eqArrays(arrayOne, arrayTwo)) {
-      console.log (' Arrays are not the same ')
+      console.log ( ` ❌❌❌  Assertion Failed: ${arrayOne}  !==  ${arrayTwo}` )
     } else {
-      console.log ( ' Arrays are the same');
+      console.log ( ` ✅✅✅  Assertion Passed: ${arrayOne} ===  ${arrayTwo}`);
     }
    }
   assertArraysEqual([1,2,3],[1,2,3])
