@@ -43,12 +43,10 @@ const assertArraysEqual = function (arrayOne, arrayTwo) {
    const findKey = function(array, callback) {
     let result = [];
     for (let index of array) {
-      if (callback(array[index])) {
-        if (!theKey) {
-          theKey = index;
-        }
+      if (callback[index]) {
+        result.push(index);
+      } else{
+        return result;
       }
     }
-  
-    return theKey;
-  };
+  }
