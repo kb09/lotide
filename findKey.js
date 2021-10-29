@@ -40,13 +40,20 @@ const assertArraysEqual = function (arrayOne, arrayTwo) {
 
    //findKey
    
-   const findKey = function(array, callback) {
-    let result = [];
-    for (let index of array) {
-      if (callback[index]) {
-        result.push(index);
-      } else{
-        return result;
+   const findKey = function(object, callBack) {
+     const result = [];
+    for (const key in object) {
+      if (callBack(object[key])) {
+        return key;}
       }
-    }
-  }
+      return result
+  };
+    
+  assertEqual(findKey({
+    "Blue Hill": { stars: 1 },
+    "Akaleri":   { stars: 3 },
+    "noma":      { stars: 2 },
+    "elBulli":   { stars: 3 },
+    "Ora":       { stars: 2 },
+    "Akelarre":  { stars: 3 }
+  }), x => x.stars === 2)// => "noma" 
