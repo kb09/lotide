@@ -36,4 +36,19 @@ const assertArraysEqual = function (arrayOne, arrayTwo) {
       console.log ( ` ✅✅✅  Assertion Passed: ${arrayOne} ===  ${arrayTwo}`);
     }
    }
+
+
+   //findKey
+   
+   const findKey = function(array, callback) {
+    let result = [];
+    for (let index of array) {
+      if (callback(array[index])) {
+        if (!theKey) {
+          theKey = index;
+        }
+      }
+    }
   
+    return theKey;
+  };
