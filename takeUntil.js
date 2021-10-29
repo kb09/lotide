@@ -36,29 +36,32 @@ const assertArraysEqual = function (arrayOne, arrayTwo) {
       console.log ( ` ✅✅✅  Assertion Passed: ${arrayOne} ===  ${arrayTwo}`);
     }
    }
+  
 
-   
 
-//findKey
+//takeUntil
 
-const findKey = function(object, callback){
-  const result = [];
-  for(let index of object){
-      if (!callback){
-        result.push[i];
-      
-      }else { return result;
-        
-      }
+const takeUntil = function(array, callback) {
+  // ...
+  const results = [];
+  for (let element of array) {
+    if(callback(element)){
+      return results;
+    }else {
+      results.push(element);
+
+    }
+  }
+  return results;
 }
 
 
-console.log(findKey({
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}, x => x.stars === 2) )// => "noma"
-}
+const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
+const results1 = takeUntil(data1, x => x < 0);
+
+assertArraysEqual(takeUntil(data1, x => x < 0), [ 1, 2, 5, 7, 2 ]);
+
+console.log('---');
+
+const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
+assertArraysEqual(takeUntil(data2, x => x === ','), [ 'I\'ve', 'been', 'to', 'Hollywood' ]);
