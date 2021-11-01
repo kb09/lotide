@@ -54,6 +54,7 @@ const assertArraysEqual = function (arrayOne, arrayTwo) {
     }
    }
 
+   
    // Test code
    
 console.log(middle([1])); // => []
