@@ -1,5 +1,4 @@
 //AssertEquals
-
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(` ✅✅✅  Assertion Passed: ${actual} ===  ${expected}`);
@@ -11,6 +10,4 @@ const assertEqual = function(actual, expected) {
 };
 
 
-
-//export the function 
 module.exports = {assertEqual}
