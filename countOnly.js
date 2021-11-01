@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATION
+//assertEqual
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(` ✅✅✅  Assertion Passed: ${actual} ===  ${expected}`);
@@ -11,6 +11,18 @@ const assertEqual = function(actual, expected) {
 
 
 // countOnly
+
+const firstNames = [
+  "Karl",
+  "Salima",
+  "Agouhanna",
+  "Fang",
+  "Kavith",
+  "Jason",
+  "Salima",
+  "Fang",
+  "Joe"
+];
 
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
@@ -29,17 +41,6 @@ const countOnly = function(allItems, itemsToCount) {
 };
 
   
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
