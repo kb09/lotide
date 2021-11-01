@@ -9,5 +9,4 @@ const head = function (array, index){
   }
 }
 
-
 module.exports = {head}
