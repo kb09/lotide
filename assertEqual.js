@@ -9,8 +9,7 @@ const assertEqual = function(actual, expected) {
 
 };
 
-// TEST CODE
-console.log(assertEqual("This is an identical string", "This is an identical string"));
-console.log(assertEqual("Lighthouse Labs", "Bootcamp"));
-console.log(assertEqual(1, 1));
-console.log(assertEqual(10, 30));
+
+
+//export the function 
+module.exports = {assertEqual}
