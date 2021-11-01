@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATION
+//assertEqual
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(` ✅✅✅  Assertion Passed: ${actual} ===  ${expected}`);
@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
 
 };
 
-//findKetByValue
+//findKeyByValue
 
 const findKeyByValue = function (object, value){
   const arrayForKeys = Object.keys(object);
