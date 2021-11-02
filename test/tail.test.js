@@ -1,7 +1,5 @@
 
 const assert = require('chai').assert;
-
-//const { assert } = require('console');
 const {tail} =require('../tail')
 
 
