@@ -33,14 +33,14 @@ The following functions are currently implemented:
 * `function5(assertEqual)`: asserts if two values are equals
 * `function6(eqArrays)`: compares two arrays
 * `function7(assertObjectsEqual)`: asserts if two objects are equals
-* `function9(countLetters)`: returns counts of each letter of a string
-* `function10(countOnly)`: takes items and returns counts for a subset of those items
-  `function11(eqObjects)`: compares two objects
-* `function12(findKey)`: scans object and returns the first key for which the callback is truthy
-* `function13(findKeyByValue)`: searches a key on an object where its value matches the value given
-* `function14(flatten)`: returns a single array from an array of arrays 
-* `function15(letterPositions)`: returns the indices in the string where each character is found
-* `function16(map)`: creates a new array from calling a given function on every element in the calling array
-* `function17(takeUntil)`: returns data from an array until callback functions is false
+* `function8(countLetters)`: returns counts of each letter of a string
+* `function9(countOnly)`: takes items and returns counts for a subset of those items
+  `function10(eqObjects)`: compares two objects
+* `function11(findKey)`: scans object and returns the first key for which the callback is truthy
+* `function12(findKeyByValue)`: searches a key on an object where its value matches the value given
+* `function13(flatten)`: returns a single array from an array of arrays 
+* `function14(letterPositions)`: returns the indices in the string where each character is found
+* `function15(map)`: creates a new array from calling a given function on every element in the calling array
+* `function16(takeUntil)`: returns data from an array until callback functions is false
 * `function17(without)`: removes specific elements from an array
 
