@@ -12,11 +12,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install kartikb09/lotide`
+`npm install kb09/lotide`
 
 **Require it:**
 
-`const _ = require('kartikb09/lotide');`
+`const _ = require('kb09/lotide');`
 
 **Call it:**
 
